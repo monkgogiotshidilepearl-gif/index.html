@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#182c28">
+<title>Circleback — Your growth deserves accountability</title>
+<style>
+:root{--forest:#182c28;--forest2:#29413a;--gold:#d6b98c;--ivory:#f5ecdd;--sage:#a9b9aa;--ink:#202a26;--muted:#75817a;--line:#e5e9e4;--paper:#fff;--bg:#f6f7f4;--green:#39836b;--red:#a65d55}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:245px;background:var(--forest);color:#f5ecdd;padding:26px 18px;display:flex;flex-direction:column;z-index:5}.brand{font-weight:800;letter-spacing:.12em;font-size:20px;margin:0 8px 8px}.brand span{color:var(--gold)}.tagline{font-size:11px;color:#bdc9c0;margin:0 8px 34px;letter-spacing:.08em}.nav-label{font-size:10px;color:#91a198;text-transform:uppercase;letter-spacing:.14em;margin:16px 10px 8px}.nav button{width:100%;display:flex;gap:12px;align-items:center;border:0;background:transparent;color:#dbe4dd;padding:11px 12px;border-radius:10px;text-align:left;margin:2px 0}.nav button.active,.nav button:hover{background:#29413a;color:#fff}.nav .ico{width:20px;text-align:center;color:var(--gold)}.sidebar-bottom{margin-top:auto;border-top:1px solid #40534b;padding-top:16px;font-size:12px;color:#bdc9c0}.main{margin-left:245px;padding:30px clamp(18px,4vw,54px);max-width:1600px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}.top-actions{display:flex;align-items:center;gap:10px}.avatar{width:38px;height:38px;border-radius:50%;background:var(--forest);color:var(--gold);display:grid;place-items:center;font-weight:700}.page{display:none}.page.active{display:block}.hero{background:var(--forest);color:var(--ivory);padding:30px;border-radius:20px;display:flex;justify-content:space-between;gap:20px;align-items:center;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #52645a;border-radius:50%;right:7%;top:-135px;box-shadow:0 0 0 25px #ffffff08,0 0 0 55px #ffffff05}.hero h1{font-size:clamp(25px,4vw,38px);line-height:1.15;margin:9px 0 10px;max-width:600px}.hero p{color:#d4ded7;margin:0;max-width:550px}.hero .eyebrow{color:var(--gold)}.hero-mark{font-size:76px;color:var(--gold);opacity:.9;z-index:1;padding:0 25px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:19px;min-width:0}.stat-label{color:var(--muted);font-size:12px}.stat-value{font-size:28px;font-weight:750;margin:7px 0 2px}.stat-note{font-size:11px;color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:26px 0 13px}.section-head h2{font-size:18px;margin:0}.section-head p{color:var(--muted);font-size:12px;margin:3px 0 0}.two-col{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.progress-track{height:9px;background:#e9eee9;border-radius:20px;overflow:hidden}.progress-fill{height:100%;background:var(--green);border-radius:20px;width:0;transition:width .2s}.habit-row{display:flex;align-items:center;gap:11px;padding:12px 0;border-bottom:1px solid var(--line)}.habit-row:last-child{border:0}.habit-row input[type=checkbox]{accent-color:var(--green);width:18px;height:18px}.habit-name{flex:1}.habit-row.done .habit-name{text-decoration:line-through;color:var(--muted)}.pill{font-size:10px;border-radius:30px;padding:5px 9px;background:#edf3ee;color:#35634f;font-weight:700}.btn{border:0;background:var(--forest);color:#fff;padding:10px 15px;border-radius:9px;font-weight:650}.btn:hover{background:var(--forest2)}.btn.secondary{background:#edf1ed;color:var(--forest)}.btn.gold{background:var(--gold);color:var(--forest)}.btn.small{padding:7px 10px;font-size:12px}.btn.danger{background:#f8eae8;color:var(--red)}.input,textarea,select{width:100%;padding:11px 12px;border:1px solid #dce3dc;border-radius:9px;background:#fff;color:var(--ink);outline:none}.input:focus,textarea:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px #39836b18}textarea{resize:vertical;min-height:90px}.form-row{display:flex;gap:9px;margin:10px 0}.form-row>*{flex:1}.muted{color:var(--muted)}.smalltext{font-size:12px}.goal-item{padding:13px 0;border-bottom:1px solid var(--line)}.goal-item:last-child{border:0}.goal-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px}.goal-title{font-weight:700}.goal-meta{font-size:11px;color:var(--muted)}.journal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.journal-grid label{font-size:12px;font-weight:700;display:block;margin-bottom:6px}.journal-grid .wide{grid-column:1/-1}.report-box{background:#f4f6f1;border-radius:12px;padding:16px;margin-top:12px}.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.plan{position:relative}.plan h3{margin:0 0 5px}.price{font-size:30px;font-weight:800;margin:14px 0}.price small{font-size:12px;color:var(--muted);font-weight:500}.plan ul{padding-left:18px;color:#56625b;font-size:13px;line-height:1.9}.plan.featured{border:2px solid var(--green)}.badge{background:#e7f1e9;color:#32664f;padding:5px 9px;border-radius:30px;font-size:10px;font-weight:800}.toast{position:fixed;right:20px;bottom:20px;background:var(--forest);color:white;padding:12px 16px;border-radius:10px;box-shadow:0 8px 30px #0002;display:none;z-index:10}.empty{padding:25px;text-align:center;color:var(--muted);font-size:13px}.footer-note{font-size:11px;color:var(--muted);margin-top:22px}.mobile-head{display:none}
+@media(max-width:950px){.sidebar{width:205px}.main{margin-left:205px;padding:24px}.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.plan-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.sidebar{display:none}.main{margin:0;padding:16px 14px 90px}.mobile-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.mobile-brand{font-weight:800;letter-spacing:.1em;color:var(--forest)}.topbar{display:none}.hero{padding:23px 20px}.hero-mark{font-size:45px;padding:0}.grid{gap:9px}.card{padding:14px}.stat-value{font-size:24px}.journal-grid{grid-template-columns:1fr}.journal-grid .wide{grid-column:auto}.bottom-nav{position:fixed;display:flex;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:8}.bottom-nav button{border:0;background:transparent;color:#657169;font-size:10px;display:flex;flex-direction:column;align-items:center;gap:3px}.bottom-nav button.active{color:var(--green);font-weight:800}.bottom-nav b{font-size:18px}.section-head{margin-top:20px}}
+@media(min-width:651px){.bottom-nav{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand">CIRCLEBACK<span>.</span></div><div class="tagline">PLAN. SHOW UP. REVIEW. REPEAT.</div>
+  <div class="nav-label">Workspace</div>
+  <nav class="nav" id="sideNav">
+    <button class="active" data-page="dashboard"><span class="ico">⌂</span>Dashboard</button>
+    <button data-page="habits"><span class="ico">✓</span>Habit tracker</button>
+    <button data-page="goals"><span class="ico">◎</span>My goals</button>
+    <button data-page="journal"><span class="ico">▤</span>Reflection journal</button>
+    <button data-page="reports"><span class="ico">▥</span>Weekly review</button>
+    <div class="nav-label">Account</div>
+    <button data-page="plans"><span class="ico">✧</span>Plans & pricing</button>
+    <button data-page="settings"><span class="ico">⚙</span>Settings</button>
+  </nav>
+  <div class="sidebar-bottom">Your growth deserves accountability.<br><br>© <span id="year"></span> Circleback</div>
+</aside>
+<main class="main">
+  <div class="mobile-head"><div class="mobile-brand">CIRCLEBACK<span style="color:var(--gold)">.</span></div><div class="avatar">U</div></div>
+  <header class="topbar"><div><div class="eyebrow" id="dateLabel"></div><div style="font-size:13px;color:var(--muted)">Your personal accountability space</div></div><div class="top-actions"><button class="btn secondary small" onclick="showPage('plans')">Upgrade plan</button><div class="avatar">U</div></div></header>
+
+  <section class="page active" id="page-dashboard">
+    <div class="hero"><div><div class="eyebrow">WELCOME TO YOUR NEXT CHAPTER</div><h1>Become who you said you would.</h1><p>Small intentional actions, repeated consistently, create meaningful change. Let's make today count.</p></div><div class="hero-mark">↻</div></div>
+    <div class="grid">
+      <div class="card"><div class="stat-label">Today's progress</div><div class="stat-value" id="dashProgress">0%</div><div class="stat-note" id="dashHabitCount">0 of 0 habits completed</div></div>
+      <div class="card"><div class="stat-label">Active goals</div><div class="stat-value" id="dashGoals">0</div><div class="stat-note">Goals you're working towards</div></div>
+      <div class="card"><div class="stat-label">Habits completed</div><div class="stat-value" id="dashDone">0</div><div class="stat-note">Today's completed habits</div></div>
+      <div class="card"><div class="stat-label">Current chapter</div><div class="stat-value" style="font-size:19px" id="dashChapter">My next chapter</div><div class="stat-note">Your journey, your pace</div></div>
+    </div>
+    <div class="two-col">
+      <div class="card"><div class="section-head" style="margin-top:0"><div><h2>Today's commitments</h2><p>Show up for the habits you chose.</p></div><button class="btn secondary small" onclick="showPage('habits')">Manage</button></div><div id="dashHabits"></div><div style="margin-top:14px"><div class="progress-track"><div class="progress-fill" id="dashBar"></div></div></div></div>
+      <div class="card"><div class="section-head" style="margin-top:0"><div><h2>Daily intention</h2><p>Choose one thing that matters today.</p></div></div><textarea id="intention" placeholder="Today, I will..."></textarea><button class="btn" style="margin-top:10px" onclick="saveIntention()">Save intention</button><div class="report-box"><strong>Circleback reminder</strong><p class="smalltext muted" style="margin-bottom:0">You don't need a perfect day. You need an honest one. Reflect, adjust and circle back.</p></div></div>
+    </div>
+  </section>
+
+  <section class="page" id="page-habits">
+    <div class="section-head"><div><div class="eyebrow">CONSISTENCY BUILDS MOMENTUM</div><h2>Habit tracker</h2><p>Create routines and record each day's progress.</p></div></div>
+    <div class="card"><h3 style="margin-top:0">Add a habit</h3><div class="form-row"><input class="input" id="habitInput" placeholder="e.g. Read for 20 minutes"><button class="btn" onclick="addHabit()">Add habit</button></div><div class="smalltext muted">Demo version: habits repeat daily. Scheduling options can be added in the production build.</div></div>
+    <div class="card" style="margin-top:15px"><div class="section-head" style="margin-top:0"><div><h2>Today's habits</h2><p id="habitSummary">0 completed</p></div><span class="pill" id="habitPercent">0%</span></div><div id="habitList"></div></div>
+  </section>
+
+  <section class="page" id="page-goals">
+    <div class="section-head"><div><div class="eyebrow">MAKE YOUR DIRECTION CLEAR</div><h2>My goals</h2><p>Turn the bigger picture into practical milestones.</p></div></div>
+    <div class="card"><h3 style="margin-top:0">Create a goal</h3><div class="form-row"><input class="input" id="goalInput" placeholder="e.g. Build a consistent morning routine"><select class="input" id="goalCategory"><option>Personal</option><option>Academic</option><option>Business</option><option>Health</option><option>Financial</option><option>Spiritual</option><option>Other</option></select></div><div class="form-row"><input class="input" id="goalDate" type="date"><button class="btn" onclick="addGoal()">Add goal</button></div></div>
+    <div class="card" style="margin-top:15px"><h3 style="margin-top:0">Your active goals</h3><div id="goalList"></div></div>
+  </section>
+
+  <section class="page" id="page-journal">
+    <div class="section-head"><div><div class="eyebrow">HONESTY IS PART OF GROWTH</div><h2>Reflection journal</h2><p>Make space to notice what is working and what needs attention.</p></div></div>
+    <div class="card"><div class="journal-grid">
+      <div class="wide"><label>What went well today?</label><textarea id="journalWins" placeholder="Today, I am proud of myself because..."></textarea></div>
+      <div><label>What challenged me?</label><textarea id="journalChallenge" placeholder="Something I found difficult..."></textarea></div>
+      <div><label>What will I do differently?</label><textarea id="journalTomorrow" placeholder="Tomorrow, I will..."></textarea></div>
+    </div><button class="btn" style="margin-top:14px" onclick="saveJournal()">Save reflection</button></div>
+    <div class="section-head"><div><h2>Previous reflections</h2><p>Your saved entries on this device.</p></div></div><div class="card" id="journalHistory"></div>
+  </section>
+
+  <section class="page" id="page-reports">
+    <div class="section-head"><div><div class="eyebrow">PAUSE. NOTICE. ADJUST.</div><h2>Weekly accountability review</h2><p>Look at your actions with honesty and decide what comes next.</p></div><button class="btn" onclick="generateReview()">Generate review</button></div>
+    <div class="grid">
+      <div class="card"><div class="stat-label">Habits recorded</div><div class="stat-value" id="weekTotal">0</div></div>
+      <div class="card"><div class="stat-label">Completed today</div><div class="stat-value" id="weekDone">0</div></div>
+      <div class="card"><div class="stat-label">Active goals</div><div class="stat-value" id="weekGoals">0</div></div>
+      <div class="card"><div class="stat-label">Journal entries</div><div class="stat-value" id="weekJournal">0</div></div>
+    </div>
+    <div class="card"><h3 style="margin-top:0">Your weekly reflection</h3><div class="journal-grid"><div><label>What were your biggest wins?</label><textarea id="reviewWins"></textarea></div><div><label>What commitments did you miss or postpone?</label><textarea id="reviewMissed"></textarea></div><div><label>What got in the way?</label><textarea id="reviewObstacles"></textarea></div><div><label>What are your three priorities next week?</label><textarea id="reviewPriorities"></textarea></div></div><button class="btn" style="margin-top:14px" onclick="saveReview()">Save weekly review</button><div id="reviewOutput"></div></div>
+  </section>
+
+  <section class="page" id="page-plans">
+    <div class="section-head"><div><div class="eyebrow">INVEST IN YOUR CONSISTENCY</div><h2>Choose your Circleback plan</h2><p>Start free. Upgrade when you're ready for more.</p></div></div>
+    <div class="plan-grid">
+      <div class="card plan"><h3>Free</h3><div class="muted smalltext">For getting started</div><div class="price">P0 <small>/ forever</small></div><ul><li>Personal dashboard</li><li>Up to 5 active habits</li><li>Up to 3 active goals</li><li>Daily check-ins</li><li>Basic reflection journal</li><li>7-day overview</li></ul><button class="btn secondary" style="width:100%" onclick="toast('You are previewing the Free plan.')">Current demo plan</button></div>
+      <div class="card plan featured"><span class="badge">RECOMMENDED</span><h3 style="margin-top:12px">Plus</h3><div class="muted smalltext">For consistent progress</div><div class="price">P49 <small>/ month</small></div><ul><li>Everything in Free</li><li>Unlimited habits and goals</li><li>Advanced analytics</li><li>Weekly and monthly reports</li><li>Custom reminders</li><li>Downloadable reports</li></ul><button class="btn" style="width:100%" onclick="toast('Payments are not connected in this HTML demo.')">Upgrade to Plus</button><p class="smalltext muted">Annual example: P490/year</p></div>
+      <div class="card plan"><h3>Premium</h3><div class="muted smalltext">For a deeper accountability experience</div><div class="price">P79 <small>/ month</small></div><ul><li>Everything in Plus</li><li>AI-assisted reflections</li><li>Accountability partners</li><li>Shared challenges</li><li>Personalised programmes</li><li>Priority support</li></ul><button class="btn secondary" style="width:100%" onclick="toast('Payments are not connected in this HTML demo.')">Explore Premium</button><p class="smalltext muted">Annual example: P790/year</p></div>
+    </div>
+    <p class="footer-note">Prices are proposed Botswana pula pricing for testing. Subscription checkout, billing, tax handling and paid-feature enforcement must be connected before accepting payments.</p>
+  </section>
+
+  <section class="page" id="page-settings">
+    <div class="section-head"><div><div class="eyebrow">MAKE IT YOURS</div><h2>Settings</h2><p>Personalise your Circleback experience.</p></div></div>
+    <div class="card" style="max-width:650px"><label class="smalltext"><strong>Your name</strong></label><input class="input" id="userName" placeholder="Your name" style="margin:7px 0 15px"><label class="smalltext"><strong>Name this chapter</strong></label><input class="input" id="chapterName" placeholder="e.g. The disciplined version of me" style="margin:7px 0 15px"><label class="smalltext"><strong>Daily reminder time</strong></label><input class="input" id="reminderTime" type="time" value="19:00" style="margin:7px 0 15px"><button class="btn" onclick="saveSettings()">Save settings</button><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h3>Data on this device</h3><p class="smalltext muted">This prototype stores demo data in your browser using local storage. It is not a secure account or cloud database.</p><button class="btn danger small" onclick="clearData()">Clear demo data</button></div>
+  </section>
+  <div class="footer-note">CIRCLEBACK. · Your growth deserves accountability. <span style="float:right">Prototype · Not connected to a backend</span></div>
+</main>
+<nav class="bottom-nav" id="bottomNav">
+  <button class="active" data-page="dashboard"><b>⌂</b>Home</button><button data-page="habits"><b>✓</b>Habits</button><button data-page="goals"><b>◎</b>Goals</button><button data-page="journal"><b>▤</b>Journal</button><button data-page="reports"><b>▥</b>Review</button>
+</nav>
+<div class="toast" id="toast"></div>
+</div>
+<script>
+const KEY='circleback_demo_v1';
+const defaults={habits:[{id:1,name:'Wake up at my planned time',done:false},{id:2,name:'Complete my morning routine',done:false},{id:3,name:'Read or learn something new',done:false},{id:4,name:'Work on my personal goals',done:false},{id:5,name:'Move my body',done:false}],goals:[],journals:[],reviews:[],intention:'',settings:{name:'',chapter:'My next chapter',reminder:'19:00'}};
+let data=load();
+function load(){try{return {...defaults,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){return structuredClone(defaults)}}
+function persist(){localStorage.setItem(KEY,JSON.stringify(data));render()}
+function today(){return new Date().toISOString().slice(0,10)}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window._toast);window._toast=setTimeout(()=>t.style.display='none',2600)}
+function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+name));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===name));window.scrollTo({top:0,behavior:'smooth'});render()}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function addHabit(){const el=document.getElementByI
